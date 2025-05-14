@@ -2,6 +2,11 @@
 #include <opencv2/opencv.hpp>
 #include <unistd.h>
 
+// the build for OpenCV 4.8.0
+// g++ -Wall -o "%e" "%f"    -I/usr/include/libcamera -isystem -std=gnu++17 -MD -MT  -L/usr/local/lib    -I/usr/include/opencv4/opencv -I/usr/include/opencv4 -I/usr/local/include/opencv4  -l:libopencv_gapi.so.4.8.0 -l:libopencv_stitching.so.4.8.0 -l:libopencv_aruco.so.4.8.0  -l:libopencv_bgsegm.so.4.8.0 -l:libopencv_bioinspired.so.4.8.0 -l:libopencv_ccalib.so.4.8.0 -l:libopencv_dnn_objdetect.so.4.8.0  -l:libopencv_dnn_superres.so.4.8.0 -l:libopencv_dpm.so.4.8.0 -l:libopencv_face.so.4.8.0  -l:libopencv_freetype.so.4.8.0 -l:libopencv_fuzzy.so.4.8.0 -l:libopencv_hdf.so.4.8.0 -l:libopencv_hfs.so.4.8.0  -l:libopencv_img_hash.so.4.8.0 -l:libopencv_intensity_transform.so.4.8.0 -l:libopencv_line_descriptor.so.4.8.0  -l:libopencv_mcc.so.4.8.0 -l:libopencv_quality.so.4.8.0 -l:libopencv_rapid.so.4.8.0 -l:libopencv_reg.so.4.8.0  -l:libopencv_rgbd.so.4.8.0 -l:libopencv_saliency.so.4.8.0 -l:libopencv_stereo.so.4.8.0 -l:libopencv_structured_light.so.4.8.0  -l:libopencv_superres.so.4.8.0 -l:libopencv_surface_matching.so.4.8.0 -l:libopencv_tracking.so.4.8.0 -l:libopencv_videostab.so.4.8.0  -l:libopencv_wechat_qrcode.so.4.8.0 -l:libopencv_xfeatures2d.so.4.8.0 -l:libopencv_xobjdetect.so.4.8.0 -l:libopencv_xphoto.so.4.8.0  -l:libopencv_shape.so.4.8.0 -l:libopencv_highgui.so.4.8.0 -l:libopencv_datasets.so.4.8.0 -l:libopencv_plot.so.4.8.0  -l:libopencv_text.so.4.8.0 -l:libopencv_ml.so.4.8.0 -l:libopencv_phase_unwrapping.so.4.8.0 -l:libopencv_optflow.so.4.8.0  -l:libopencv_ximgproc.so.4.8.0 -l:libopencv_video.so.4.8.0 -l:libopencv_videoio.so.4.8.0 -l:libopencv_imgcodecs.so.4.8.0  -l:libopencv_objdetect.so.4.8.0 -l:libopencv_calib3d.so.4.8.0 -l:libopencv_dnn.so.4.8.0 -l:libopencv_features2d.so.4.8.0  -l:libopencv_flann.so.4.8.0 -l:libopencv_photo.so.4.8.0 -l:libopencv_imgproc.so.4.8.0 -l:libopencv_core.so.4.8.0 -l:liblccv.so
+
+
+
 using namespace cv;
 const int max_value_H = 360 / 2;
 const int max_value = 255;
